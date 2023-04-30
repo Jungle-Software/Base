@@ -22,11 +22,10 @@ export default function RootLayout({
       <body>
         <AuthContextProvider>
           <Navbar>
-            <span>Test</span>
+            {children}
           </Navbar>
         </AuthContextProvider>
       </body>
     </html>
-
   )
 }

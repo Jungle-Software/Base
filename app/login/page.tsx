@@ -1,13 +1,15 @@
+'use client';
+
 import React from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 
 interface LoginType {
     email: string;
     password: string;
 }
-const LoginPage = () => {
+export default function Login() {
     const methods = useForm<LoginType>({ mode: "onBlur" });
 
     const {
@@ -73,6 +75,4 @@ const LoginPage = () => {
             </FormProvider>
         </div>
     );
-};
-
-export default LoginPage;
+}

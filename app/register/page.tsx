@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
@@ -8,7 +10,7 @@ interface SignupType {
     password: string;
     password_confirm: string;
 }
-const SignupPage = () => {
+export default function Register() {
     const methods = useForm<SignupType>({ mode: "onBlur" });
 
     const {
@@ -92,6 +94,4 @@ const SignupPage = () => {
             </FormProvider>
         </div>
     );
-};
-
-export default SignupPage;
+}

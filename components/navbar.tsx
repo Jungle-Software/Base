@@ -22,7 +22,7 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
     {
       id: 3,
       name: "Sign Up",
-      link: "/signup",
+      link: "/register",
     },
   ];
 

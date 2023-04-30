@@ -1,6 +1,8 @@
+'use client';
+
 import ProtectedRoute from "@/components/ProtectedRoute";
 
-const DashboardPage = () => {
+export default function DashboardPage() {
     return (
         <ProtectedRoute>
             <div className="flex py-2 container mx-auto">
@@ -10,6 +12,4 @@ const DashboardPage = () => {
             </div>
         </ProtectedRoute>
     );
-};
-
-export default DashboardPage;
+}
